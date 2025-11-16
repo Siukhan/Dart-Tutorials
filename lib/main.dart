@@ -105,26 +105,27 @@ void main() {
   areaOfCircle = 3.1416 * (radius) * (radius);
   print("Area of Circle is: $areaOfCircle");
 
-// Write Program to Calculate Area of Square.
+  // Write Program to Calculate Area of Square.
   double side, areaOfSquare;
   side = 5;
   areaOfSquare = side * side;
   print("Area of Square is: $areaOfSquare");
 
-// Write Program to Calculate Area of Rectangle.
+  // Write Program to Calculate Area of Rectangle.
   double length, width, areaOfRectangle;
   length = 10;
   width = 5;
   areaOfRectangle = length * width;
   print("Area of Rectangle is: $areaOfRectangle");
 
-// Write Program to convert days to years, weeks and days
-  int totalDays = 400;
-  int years = totalDays ~/ 365;
-  int weeks = (totalDays % 365) ~/ 7;
-  int days = (totalDays % 365) % 7;
+  // Write Program to convert days to years, weeks and days
+  int totalDays, years, weeks, days;
+  totalDays = 400;
+  years = totalDays ~/ 365;
+  weeks = (totalDays % 365) ~/ 7;
+  days = (totalDays % 365) % 7;
 
   print(
-      "$totalDays days is equal to $years years, $weeks weeks and $days days.");
-
+    "$totalDays days is equal to $years years, $weeks weeks and $days days.",
+  );
 }
